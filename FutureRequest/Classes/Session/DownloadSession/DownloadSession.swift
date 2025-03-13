@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class FormSession: FutureSession {
+public class DownloadSession: FutureSession {
     
     
 }

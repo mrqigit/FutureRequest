@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02FBAE03C933C116A181168CF52A12F7 /* FutureRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1339BFACBD13186EDFA1DB18EA9920E6 /* FutureRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D8655EF569E691CC0E6940CD98FF736 /* Pods-FutureRequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4BF904D6FC540637087FD3D46C58A1 /* Pods-FutureRequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17A6BD3A392BB67BB39BC5F252A1CFDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		1C4802B8ACA6C12BB45BB3A21BDE711E /* Pods-FutureRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0A89D27C45F1E7278FC5E00227B40 /* Pods-FutureRequest_Example-dummy.m */; };
-		28B90657111188EFB623D11C55E7C9BE /* UploadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAC8F815DD193F6FD8CACAA3E35715 /* UploadSession.swift */; };
-		6F1EC823E0B8B0F822722E26F0A886E6 /* DownloadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1073ED188E2C4EE8366AB37FFA516A34 /* DownloadSession.swift */; };
-		7C6D04379D5301FD94A81EB6EBD5B40A /* FutureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BDA40F7C24481791FC31B591BDF897 /* FutureSession.swift */; };
+		2AA0F277E6AD72FDCE7FAFA74AB1AC9B /* FutureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */; };
+		4791CC6AAC92288821B7D4A2272FACFE /* FutureRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F08FE2C10D70677D8D71DB4C86E8499 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */; };
+		7856F5F89AB14E810FAC1792519ADC57 /* UploadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */; };
 		7D39CB9857B43BDA60AC645AAC2A5339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		9A19EC22FF6BCDF697085029F1EDE0E3 /* FormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4EFB37A6282D5E0AC5EF1289E34F7D /* FormSession.swift */; };
-		BB70A9D938AC75A292D3693387D32624 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B01BD03A4EA0AE74F32BAAB889D3B /* RequestProtocol.swift */; };
-		DA6210C10E5965BBEF8FA8F74F720E2E /* Requestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788C419E8187A5198635DAB64FF5A9E /* Requestor.swift */; };
-		DAE20E44107D44FA337D3194968EEF5B /* FutureRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB83622467EDF614335C3A7E924403 /* FutureRequest-dummy.m */; };
-		F584C9C031EC69C0CE18322D82B311F9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE2EE7F71666F087D63C08586A7F071 /* Response.swift */; };
+		873FA35BBA3A0AFDB28C612864472B63 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */; };
+		8ABA41929CEC4503CDB051BBBF9AE1F5 /* FormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */; };
+		93D5D538EAE0F4CF6E3254D46D70326C /* FutureRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */; };
+		974D27D563465D43086AB1E78A73301D /* DownloadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */; };
+		9FD0411F364CA77D84F9E20147F404BD /* Requestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */; };
+		EEDD0B63C07BB414C8049C0E6414A460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		F923BFD1570A98AED2CAA219EC766AE3 /* SessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6063640D3BD31072A996CEB780DABE9A /* PBXContainerItemProxy */ = {
+		328DFD535A22D68F81030CA904C02551 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -33,44 +34,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06D5239F54E779680B2C0878C0401909 /* FutureRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.release.xcconfig; sourceTree = "<group>"; };
-		0788C419E8187A5198635DAB64FF5A9E /* Requestor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Requestor.swift; sourceTree = "<group>"; };
-		1073ED188E2C4EE8366AB37FFA516A34 /* DownloadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DownloadSession.swift; sourceTree = "<group>"; };
-		109B01BD03A4EA0AE74F32BAAB889D3B /* RequestProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
-		1339BFACBD13186EDFA1DB18EA9920E6 /* FutureRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-umbrella.h"; sourceTree = "<group>"; };
+		121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FutureRequest-dummy.m"; sourceTree = "<group>"; };
+		137FB97A88C2FC14D07C884BBD6680EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1EA0A89D27C45F1E7278FC5E00227B40 /* Pods-FutureRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FutureRequest_Example-dummy.m"; sourceTree = "<group>"; };
-		1ECB83622467EDF614335C3A7E924403 /* FutureRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FutureRequest-dummy.m"; sourceTree = "<group>"; };
-		21C0057E7E1B7D723C264D2DCEBEB7C1 /* FutureRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.debug.xcconfig; sourceTree = "<group>"; };
-		33C76E57091EFD52B7B13A7A54A0EEC9 /* FutureRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FutureRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F66026BEA02F17B25168641051B7404 /* FutureRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-prefix.pch"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3F4EFB37A6282D5E0AC5EF1289E34F7D /* FormSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormSession.swift; sourceTree = "<group>"; };
-		4FE2EE7F71666F087D63C08586A7F071 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		69719D408DB27CFBB8AF44023CC9103D /* FutureRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FutureRequest.modulemap; sourceTree = "<group>"; };
-		839E33F49B94D2BE5453C8D129EFBF8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3CD2FC028304114D8839DC1BF3228C03 /* FutureRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FutureRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FutureSession.swift; sourceTree = "<group>"; };
+		5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormSession.swift; sourceTree = "<group>"; };
+		75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		8F4BF904D6FC540637087FD3D46C58A1 /* Pods-FutureRequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FutureRequest_Example-umbrella.h"; sourceTree = "<group>"; };
-		90BDA40F7C24481791FC31B591BDF897 /* FutureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FutureSession.swift; sourceTree = "<group>"; };
+		921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionConfig.swift; sourceTree = "<group>"; };
+		99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.release.xcconfig; sourceTree = "<group>"; };
 		9C721B416D2E91EB88FF2003DB03AC89 /* Pods-FutureRequest_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FutureRequest_Example"; path = Pods_FutureRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DownloadSession.swift; sourceTree = "<group>"; };
+		A257F3110A83CE75B58F96B6457C2E0E /* FutureRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FutureRequest.modulemap; sourceTree = "<group>"; };
 		A92438FA9C255930EC42DB8F0EC7F151 /* Pods-FutureRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FutureRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B941FBB4F6B15F84302365234C741C81 /* Pods-FutureRequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FutureRequest_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C2676F6AB3DA9B91E75042601D9A605C /* FutureRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FutureRequest-Info.plist"; sourceTree = "<group>"; };
 		CADB1C0074B499174C590B97ACDAC96B /* Pods-FutureRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FutureRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CF6131442799523D7C4942738ADFBF5C /* FutureRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FutureRequest; path = FutureRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFAAC8F815DD193F6FD8CACAA3E35715 /* UploadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UploadSession.swift; sourceTree = "<group>"; };
 		D25170880C60AF0134D7B8FF33D1E16A /* Pods-FutureRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FutureRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4099D8C5323773AED3ED766CF85C5F6 /* Pods-FutureRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FutureRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.debug.xcconfig; sourceTree = "<group>"; };
 		DA7C9C760A962E3F8001073801A79C31 /* Pods-FutureRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FutureRequest_Example-Info.plist"; sourceTree = "<group>"; };
-		E7E6955378E100D70F320D658BD7EA47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F00F8D7CFECECC59054A501B42805D08 /* FutureRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-prefix.pch"; sourceTree = "<group>"; };
+		DB607152E23EA61759B38202ED4DE452 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-umbrella.h"; sourceTree = "<group>"; };
+		F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Requestor.swift; sourceTree = "<group>"; };
+		F891E6D95593E00E3B7126009D5EF20D /* FutureRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FutureRequest-Info.plist"; sourceTree = "<group>"; };
+		FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UploadSession.swift; sourceTree = "<group>"; };
 		FDE3EB916336C3A4262C9677431AF354 /* Pods-FutureRequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FutureRequest_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4800E79987748EE6914EA8B7ED01DBB2 /* Frameworks */ = {
+		214616F98EE09DDC275390226A12494F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A6BD3A392BB67BB39BC5F252A1CFDD /* Foundation.framework in Frameworks */,
+				EEDD0B63C07BB414C8049C0E6414A460 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,51 +87,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		013263E42452FA04B238EF5699A2DCB7 /* FutureRequest */ = {
+		05D270CF73C52BC71DE04EC4FD908735 /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				6BEFE17755539BD07A04B39667F17B80 /* Pod */,
-				BA1281AC62B74DE18A3FF2A9CCCCCF21 /* Protocol */,
-				1D97D2E9A53EFF5AF359D3561452D77E /* Requestor */,
-				89A9EEEBE92D4F6D95CA9B1D395D5F80 /* Response */,
-				AFF55792D1D8139B550FB2CF5E18B882 /* Session */,
-				1E0065AFD8C12D04ACD1952918861F05 /* Support Files */,
+				E450C9FD4C5FDB749B356C4A25BF9A2E /* DownloadSession */,
+				70006F708C7098A91C3EC59D833BDC71 /* FormSession */,
+				39A2B07FFE9EED2159A56682516D8814 /* FutureSession */,
+				E09C1EAC990DEB14059836A7AEA23495 /* UploadSession */,
 			);
-			name = FutureRequest;
-			path = ../..;
+			name = Session;
+			path = FutureRequest/Classes/Session;
 			sourceTree = "<group>";
 		};
-		1D97D2E9A53EFF5AF359D3561452D77E /* Requestor */ = {
+		2D7C6C6C4A22FDE89F11750AF29E0184 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0788C419E8187A5198635DAB64FF5A9E /* Requestor.swift */,
-			);
-			name = Requestor;
-			path = FutureRequest/Classes/Requestor;
-			sourceTree = "<group>";
-		};
-		1E0065AFD8C12D04ACD1952918861F05 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				69719D408DB27CFBB8AF44023CC9103D /* FutureRequest.modulemap */,
-				1ECB83622467EDF614335C3A7E924403 /* FutureRequest-dummy.m */,
-				C2676F6AB3DA9B91E75042601D9A605C /* FutureRequest-Info.plist */,
-				F00F8D7CFECECC59054A501B42805D08 /* FutureRequest-prefix.pch */,
-				1339BFACBD13186EDFA1DB18EA9920E6 /* FutureRequest-umbrella.h */,
-				21C0057E7E1B7D723C264D2DCEBEB7C1 /* FutureRequest.debug.xcconfig */,
-				06D5239F54E779680B2C0878C0401909 /* FutureRequest.release.xcconfig */,
+				A257F3110A83CE75B58F96B6457C2E0E /* FutureRequest.modulemap */,
+				121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */,
+				F891E6D95593E00E3B7126009D5EF20D /* FutureRequest-Info.plist */,
+				2F66026BEA02F17B25168641051B7404 /* FutureRequest-prefix.pch */,
+				F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */,
+				DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */,
+				99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FutureRequest";
 			sourceTree = "<group>";
 		};
-		4212659B915848915AAD38AF0C08C01E /* FormSession */ = {
+		39A2B07FFE9EED2159A56682516D8814 /* FutureSession */ = {
 			isa = PBXGroup;
 			children = (
-				3F4EFB37A6282D5E0AC5EF1289E34F7D /* FormSession.swift */,
+				47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */,
 			);
-			name = FormSession;
-			path = FormSession;
+			name = FutureSession;
+			path = FutureSession;
+			sourceTree = "<group>";
+		};
+		4B1B6D3650EC3C29C966094A6A763BB6 /* Requestor */ = {
+			isa = PBXGroup;
+			children = (
+				F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */,
+			);
+			name = Requestor;
+			path = FutureRequest/Classes/Requestor;
 			sourceTree = "<group>";
 		};
 		4C3D23101E2EB32976EB98BB803D4AA4 /* Pods-FutureRequest_Example */ = {
@@ -149,79 +149,73 @@
 			path = "Target Support Files/Pods-FutureRequest_Example";
 			sourceTree = "<group>";
 		};
-		5520E290D803B4DC85784E02E2659C48 /* Development Pods */ = {
+		58E1148F9F83233E158A4127F291088C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				013263E42452FA04B238EF5699A2DCB7 /* FutureRequest */,
+				75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */,
+			);
+			name = Protocol;
+			path = FutureRequest/Classes/Protocol;
+			sourceTree = "<group>";
+		};
+		70006F708C7098A91C3EC59D833BDC71 /* FormSession */ = {
+			isa = PBXGroup;
+			children = (
+				5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */,
+			);
+			name = FormSession;
+			path = FormSession;
+			sourceTree = "<group>";
+		};
+		7224622614A5C5A035034C4F65162659 /* SessionConfig */ = {
+			isa = PBXGroup;
+			children = (
+				921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */,
+			);
+			name = SessionConfig;
+			path = FutureRequest/Classes/SessionConfig;
+			sourceTree = "<group>";
+		};
+		823AB1B44807B3FCF48532A34868C176 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A396A13B5E94DB01C496DE3B242C845 /* FutureRequest */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		642C8EF09CAC71ACCB9D7820ED128D27 /* DownloadSession */ = {
+		8A396A13B5E94DB01C496DE3B242C845 /* FutureRequest */ = {
 			isa = PBXGroup;
 			children = (
-				1073ED188E2C4EE8366AB37FFA516A34 /* DownloadSession.swift */,
+				93D546D03B57E94A0629476B1FD55F34 /* Pod */,
+				58E1148F9F83233E158A4127F291088C /* Protocol */,
+				4B1B6D3650EC3C29C966094A6A763BB6 /* Requestor */,
+				C390845B4E9DA34445E431CE55A3B655 /* Response */,
+				05D270CF73C52BC71DE04EC4FD908735 /* Session */,
+				7224622614A5C5A035034C4F65162659 /* SessionConfig */,
+				2D7C6C6C4A22FDE89F11750AF29E0184 /* Support Files */,
 			);
-			name = DownloadSession;
-			path = DownloadSession;
+			name = FutureRequest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		6BEFE17755539BD07A04B39667F17B80 /* Pod */ = {
+		93D546D03B57E94A0629476B1FD55F34 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				33C76E57091EFD52B7B13A7A54A0EEC9 /* FutureRequest.podspec */,
-				E7E6955378E100D70F320D658BD7EA47 /* LICENSE */,
-				839E33F49B94D2BE5453C8D129EFBF8B /* README.md */,
+				3CD2FC028304114D8839DC1BF3228C03 /* FutureRequest.podspec */,
+				DB607152E23EA61759B38202ED4DE452 /* LICENSE */,
+				137FB97A88C2FC14D07C884BBD6680EC /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		7E4CDE1167E0532EE687B44BFEBB5D3C /* UploadSession */ = {
+		C390845B4E9DA34445E431CE55A3B655 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				CFAAC8F815DD193F6FD8CACAA3E35715 /* UploadSession.swift */,
-			);
-			name = UploadSession;
-			path = UploadSession;
-			sourceTree = "<group>";
-		};
-		89A9EEEBE92D4F6D95CA9B1D395D5F80 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				4FE2EE7F71666F087D63C08586A7F071 /* Response.swift */,
+				E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */,
 			);
 			name = Response;
 			path = FutureRequest/Classes/Response;
-			sourceTree = "<group>";
-		};
-		A436E00B62E711FE5B5DD2C09D4A4833 /* FutureSession */ = {
-			isa = PBXGroup;
-			children = (
-				90BDA40F7C24481791FC31B591BDF897 /* FutureSession.swift */,
-			);
-			name = FutureSession;
-			path = FutureSession;
-			sourceTree = "<group>";
-		};
-		AFF55792D1D8139B550FB2CF5E18B882 /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				642C8EF09CAC71ACCB9D7820ED128D27 /* DownloadSession */,
-				4212659B915848915AAD38AF0C08C01E /* FormSession */,
-				A436E00B62E711FE5B5DD2C09D4A4833 /* FutureSession */,
-				7E4CDE1167E0532EE687B44BFEBB5D3C /* UploadSession */,
-			);
-			name = Session;
-			path = FutureRequest/Classes/Session;
-			sourceTree = "<group>";
-		};
-		BA1281AC62B74DE18A3FF2A9CCCCCF21 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				109B01BD03A4EA0AE74F32BAAB889D3B /* RequestProtocol.swift */,
-			);
-			name = Protocol;
-			path = FutureRequest/Classes/Protocol;
 			sourceTree = "<group>";
 		};
 		CC35E0AC92140DDE8D335C4933AFBC72 /* Targets Support Files */ = {
@@ -236,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5520E290D803B4DC85784E02E2659C48 /* Development Pods */,
+				823AB1B44807B3FCF48532A34868C176 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				CF5E569C395EEEBC55BF92A8C823E34D /* Products */,
 				CC35E0AC92140DDE8D335C4933AFBC72 /* Targets Support Files */,
@@ -260,6 +254,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E09C1EAC990DEB14059836A7AEA23495 /* UploadSession */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */,
+			);
+			name = UploadSession;
+			path = UploadSession;
+			sourceTree = "<group>";
+		};
+		E450C9FD4C5FDB749B356C4A25BF9A2E /* DownloadSession */ = {
+			isa = PBXGroup;
+			children = (
+				A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */,
+			);
+			name = DownloadSession;
+			path = DownloadSession;
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,11 +283,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		317DF67B54ABF0D0EACD8C094FE618BC /* Headers */ = {
+		33D3EC3AF80EAD78638652FEC8BBE8AF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FBAE03C933C116A181168CF52A12F7 /* FutureRequest-umbrella.h in Headers */,
+				4791CC6AAC92288821B7D4A2272FACFE /* FutureRequest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +304,12 @@
 /* Begin PBXNativeTarget section */
 		1231A0F580C81C33E16E7641C25636DF /* FutureRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E412489EAA30E5D3B0E8C415C74639E /* Build configuration list for PBXNativeTarget "FutureRequest" */;
+			buildConfigurationList = 9AF924645628EE03544CD1139926A991 /* Build configuration list for PBXNativeTarget "FutureRequest" */;
 			buildPhases = (
-				317DF67B54ABF0D0EACD8C094FE618BC /* Headers */,
-				8B3825D0F75E619A406C3DFE834830C0 /* Sources */,
-				4800E79987748EE6914EA8B7ED01DBB2 /* Frameworks */,
-				0C7992BBF2B55D4E723D19605682E1BE /* Resources */,
+				33D3EC3AF80EAD78638652FEC8BBE8AF /* Headers */,
+				3BE6B089FCD2D360FB9AD652E5814C6F /* Sources */,
+				214616F98EE09DDC275390226A12494F /* Frameworks */,
+				1A71654CC3DF1244C22600707C3FD051 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -320,7 +332,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B41014E82D3B51ECD96BD3A3FE655C39 /* PBXTargetDependency */,
+				F9E90EB4B1E30F0654E09ABCB713947D /* PBXTargetDependency */,
 			);
 			name = "Pods-FutureRequest_Example";
 			productName = Pods_FutureRequest_Example;
@@ -358,7 +370,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C7992BBF2B55D4E723D19605682E1BE /* Resources */ = {
+		1A71654CC3DF1244C22600707C3FD051 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,18 +387,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8B3825D0F75E619A406C3DFE834830C0 /* Sources */ = {
+		3BE6B089FCD2D360FB9AD652E5814C6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1EC823E0B8B0F822722E26F0A886E6 /* DownloadSession.swift in Sources */,
-				9A19EC22FF6BCDF697085029F1EDE0E3 /* FormSession.swift in Sources */,
-				DAE20E44107D44FA337D3194968EEF5B /* FutureRequest-dummy.m in Sources */,
-				7C6D04379D5301FD94A81EB6EBD5B40A /* FutureSession.swift in Sources */,
-				DA6210C10E5965BBEF8FA8F74F720E2E /* Requestor.swift in Sources */,
-				BB70A9D938AC75A292D3693387D32624 /* RequestProtocol.swift in Sources */,
-				F584C9C031EC69C0CE18322D82B311F9 /* Response.swift in Sources */,
-				28B90657111188EFB623D11C55E7C9BE /* UploadSession.swift in Sources */,
+				974D27D563465D43086AB1E78A73301D /* DownloadSession.swift in Sources */,
+				8ABA41929CEC4503CDB051BBBF9AE1F5 /* FormSession.swift in Sources */,
+				93D5D538EAE0F4CF6E3254D46D70326C /* FutureRequest-dummy.m in Sources */,
+				2AA0F277E6AD72FDCE7FAFA74AB1AC9B /* FutureSession.swift in Sources */,
+				9FD0411F364CA77D84F9E20147F404BD /* Requestor.swift in Sources */,
+				6F08FE2C10D70677D8D71DB4C86E8499 /* RequestProtocol.swift in Sources */,
+				873FA35BBA3A0AFDB28C612864472B63 /* Response.swift in Sources */,
+				F923BFD1570A98AED2CAA219EC766AE3 /* SessionConfig.swift in Sources */,
+				7856F5F89AB14E810FAC1792519ADC57 /* UploadSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,18 +414,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B41014E82D3B51ECD96BD3A3FE655C39 /* PBXTargetDependency */ = {
+		F9E90EB4B1E30F0654E09ABCB713947D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FutureRequest;
 			target = 1231A0F580C81C33E16E7641C25636DF /* FutureRequest */;
-			targetProxy = 6063640D3BD31072A996CEB780DABE9A /* PBXContainerItemProxy */;
+			targetProxy = 328DFD535A22D68F81030CA904C02551 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		383544511D101C670033BCBD0CB517A5 /* Debug */ = {
+		30935AD7A12631C5155BEBBE065404B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21C0057E7E1B7D723C264D2DCEBEB7C1 /* FutureRequest.debug.xcconfig */;
+			baseConfigurationReference = DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -445,9 +458,9 @@
 			};
 			name = Debug;
 		};
-		47B822150285FA558CC9B33BD8017165 /* Release */ = {
+		3F8284CD89C21F01FC5FBAD46E832047 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06D5239F54E779680B2C0878C0401909 /* FutureRequest.release.xcconfig */;
+			baseConfigurationReference = 99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -683,15 +696,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E412489EAA30E5D3B0E8C415C74639E /* Build configuration list for PBXNativeTarget "FutureRequest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				383544511D101C670033BCBD0CB517A5 /* Debug */,
-				47B822150285FA558CC9B33BD8017165 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -706,6 +710,15 @@
 			buildConfigurations = (
 				5015EE9545004938C2AA28C833B6B553 /* Debug */,
 				8891A6A367DAA79AB638D8D6C4832CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF924645628EE03544CD1139926A991 /* Build configuration list for PBXNativeTarget "FutureRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30935AD7A12631C5155BEBBE065404B1 /* Debug */,
+				3F8284CD89C21F01FC5FBAD46E832047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
