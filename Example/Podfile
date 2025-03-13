@@ -5,9 +5,4 @@ platform :ios, '10.0'
 target 'FutureRequest_Example' do
   pod 'FutureRequest', :path => '../'
 
-  target 'FutureRequest_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

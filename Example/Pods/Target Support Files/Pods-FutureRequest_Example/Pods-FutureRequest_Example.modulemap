@@ -1,0 +1,6 @@
+framework module Pods_FutureRequest_Example {
+  umbrella header "Pods-FutureRequest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

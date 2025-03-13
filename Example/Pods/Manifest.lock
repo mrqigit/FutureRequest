@@ -1,0 +1,16 @@
+PODS:
+  - FutureRequest (0.0.1)
+
+DEPENDENCIES:
+  - FutureRequest (from `../`)
+
+EXTERNAL SOURCES:
+  FutureRequest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FutureRequest: c208f9d96a1572d54c875462513fa3080e9e33f1
+
+PODFILE CHECKSUM: a00ea9d7940c8ea86bb932c297ad89c8a0b82722
+
+COCOAPODS: 1.16.2

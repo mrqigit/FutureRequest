@@ -1,0 +1,22 @@
+{
+  "name": "FutureRequest",
+  "version": "0.0.1",
+  "summary": "A short description of FutureRequest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mrqigit/FutureRequest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mr.Qi": "myloveqzk@163.com"
+  },
+  "source": {
+    "git": "https://github.com/mrqigit/FutureRequest.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "FutureRequest/Classes/**/*"
+}
