@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+public class FutureSession: NSObject {
+}
