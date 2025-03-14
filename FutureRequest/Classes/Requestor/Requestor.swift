@@ -7,24 +7,57 @@
 
 import Foundation
 
-internal class Requestor: NSObject {
+public enum Method: MethodProtocol {
     
-    var method: Method
-    var contentType: ContentType
-    var url: String?
-    var params: [String: Any?]
+    case get(url: String, query: Query? = nil)
+    case post(url: String, params: Params? = nil)
+    case put(url: String, params: Params? = nil)
+    case delete(url: String, params: Params? = nil)
+    case patch(url: String, params: Params? = nil)
     
-    required init(method: Method, contentType: ContentType, url: String?, params: [String : Any?]) {
-        self.method = method
-        self.contentType = contentType
-        self.url = url
-        self.params = params
-        
-        super.init()
+    var url: String? {
+        switch self {
+        case let .get(url: url, query: _):
+            return url
+        case let .post(url: url, params: _):
+            return url
+        case let .put(url: url, params: _):
+            return url
+        case let .delete(url: url, params: _):
+            return url
+        case let .patch(url: url, params: _):
+            return url
+        default:
+            return nil
+        }
+    }
+    
+    var query: Query? {
+        switch self {
+        case let .get(url: _, query: query):
+            return query
+        default:
+            return nil
+        }
+    }
+    
+    var params: Params? {
+        switch self {
+        case let .post(url: _, params: params):
+            return params
+        case let .put(url: _, params: params):
+            return params
+        case let .delete(url: _, params: params):
+            return params
+        case let .patch(url: _, params: params):
+            return params
+        default:
+            return nil
+        }
     }
 }
 
-public enum Method: String {
+public enum MethodType: String {
     case get = "get"
     case post = "post"
     case put = "put"
@@ -49,4 +82,3 @@ public enum ContentType: String {
     case pdf = "application/pdf"
     case zip = "application/zip"
 }
-

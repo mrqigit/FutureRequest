@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class Response: NSObject {
+public class Response: NSObject {
     
     var code: Int
     var msg: String?
@@ -20,3 +20,7 @@ open class Response: NSObject {
     }
 }
 
+public enum ResponseEnum {
+    case fail(response: Response)
+    case succ(request: URLRequest)
+}

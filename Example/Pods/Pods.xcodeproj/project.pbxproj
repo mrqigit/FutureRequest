@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01CDB6DFB64B6BCCA1A7CA592FBBA229 /* FutureRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C0DBBD02B9CA53864DE1CA5F880AA0 /* FutureRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D8655EF569E691CC0E6940CD98FF736 /* Pods-FutureRequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4BF904D6FC540637087FD3D46C58A1 /* Pods-FutureRequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12E52FC76233BC34571AECCBE5C801F8 /* SessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AA7B382D0706B4B88D29F68DF95E4 /* SessionConfig.swift */; };
+		1A170863284264DF6254843A5AE63948 /* FormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5345BAE014C8CB9D2E43D2AEA9002 /* FormSession.swift */; };
 		1C4802B8ACA6C12BB45BB3A21BDE711E /* Pods-FutureRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0A89D27C45F1E7278FC5E00227B40 /* Pods-FutureRequest_Example-dummy.m */; };
-		2AA0F277E6AD72FDCE7FAFA74AB1AC9B /* FutureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */; };
-		4791CC6AAC92288821B7D4A2272FACFE /* FutureRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F08FE2C10D70677D8D71DB4C86E8499 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */; };
-		7856F5F89AB14E810FAC1792519ADC57 /* UploadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */; };
+		324B37792D051AD9BBB11970634DA247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		3FF8E18FA31B929E0DF595D17122C0FE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554A784C77F5AB8ADF669522224C7 /* Response.swift */; };
 		7D39CB9857B43BDA60AC645AAC2A5339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		873FA35BBA3A0AFDB28C612864472B63 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */; };
-		8ABA41929CEC4503CDB051BBBF9AE1F5 /* FormSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */; };
-		93D5D538EAE0F4CF6E3254D46D70326C /* FutureRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */; };
-		974D27D563465D43086AB1E78A73301D /* DownloadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */; };
-		9FD0411F364CA77D84F9E20147F404BD /* Requestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */; };
-		EEDD0B63C07BB414C8049C0E6414A460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		F923BFD1570A98AED2CAA219EC766AE3 /* SessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */; };
+		8E67D38A5A8E03CE179B8398008987BE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3AF4A2B6E411F61E1C2A9ACF33A703 /* Extension.swift */; };
+		8EA3C43A84C027E268F13381409DE37D /* BlockProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF88148548C281D781D4F49010B5AB3 /* BlockProxy.swift */; };
+		A4CDE4AD1C50303D3D43AFEF36C49264 /* UploadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0DE16A059564AD0D3E817B9315721 /* UploadSession.swift */; };
+		A9C5002BF24E2FE3350300631E572DCE /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B154D56F6BD62D890DDD7B38D11A2 /* RequestProtocol.swift */; };
+		AEE45FC051EC40ABD381400F0F45E904 /* FutureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A825A194E0F0810D30061C67A5A2633A /* FutureSession.swift */; };
+		C255636C5F99E05B82610EC894B5B752 /* FutureRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B06D2666087CB0C64A94BEA019735 /* FutureRequest-dummy.m */; };
+		C2C13EEA3F540DFD4C8A1AF5ECF1F73D /* DownloadSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D4D8898285E65C5D13B33ADF63338 /* DownloadSession.swift */; };
+		CE6370D54B68D4A87960BB708EF5CB44 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39C4035769ACD30FDF23C2DE4A8D9 /* Typealias.swift */; };
+		D07321AD7C2C967E533023F7F24E6AA3 /* Requestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CD4EF05E2EACBB6E7FF1244456375E /* Requestor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		328DFD535A22D68F81030CA904C02551 /* PBXContainerItemProxy */ = {
+		5477D67823FD13213F66DFE8F0D322CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,45 +37,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FutureRequest-dummy.m"; sourceTree = "<group>"; };
-		137FB97A88C2FC14D07C884BBD6680EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		003AA7B382D0706B4B88D29F68DF95E4 /* SessionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionConfig.swift; sourceTree = "<group>"; };
+		04D8FE33EC6AC33CCD9DF796CBA48438 /* FutureRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.debug.xcconfig; sourceTree = "<group>"; };
+		0A9B06D2666087CB0C64A94BEA019735 /* FutureRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FutureRequest-dummy.m"; sourceTree = "<group>"; };
+		0BD30430DFA7D298F57A015519ADA201 /* FutureRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FutureRequest.modulemap; sourceTree = "<group>"; };
+		1458BB9811B081C2E7A5F305393509D7 /* FutureRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-prefix.pch"; sourceTree = "<group>"; };
+		1E1E8B77DAFB889B95A1F494875A87E7 /* FutureRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FutureRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1EA0A89D27C45F1E7278FC5E00227B40 /* Pods-FutureRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FutureRequest_Example-dummy.m"; sourceTree = "<group>"; };
-		2F66026BEA02F17B25168641051B7404 /* FutureRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-prefix.pch"; sourceTree = "<group>"; };
+		2B9DBC2C6F7C78DE08945E836E4D8496 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		31CD4EF05E2EACBB6E7FF1244456375E /* Requestor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Requestor.swift; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3CD2FC028304114D8839DC1BF3228C03 /* FutureRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FutureRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FutureSession.swift; sourceTree = "<group>"; };
-		5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormSession.swift; sourceTree = "<group>"; };
-		75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		42D39C4035769ACD30FDF23C2DE4A8D9 /* Typealias.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		47B63C4AFEB9D57CD0F58664DC55F681 /* FutureRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FutureRequest-Info.plist"; sourceTree = "<group>"; };
+		6BF88148548C281D781D4F49010B5AB3 /* BlockProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlockProxy.swift; sourceTree = "<group>"; };
+		71C0DBBD02B9CA53864DE1CA5F880AA0 /* FutureRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-umbrella.h"; sourceTree = "<group>"; };
+		7F4B154D56F6BD62D890DDD7B38D11A2 /* RequestProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		86F820586F0A6F396DB865A4B20658CA /* FutureRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.release.xcconfig; sourceTree = "<group>"; };
+		8A3AF4A2B6E411F61E1C2A9ACF33A703 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8C7D4D8898285E65C5D13B33ADF63338 /* DownloadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DownloadSession.swift; sourceTree = "<group>"; };
 		8F4BF904D6FC540637087FD3D46C58A1 /* Pods-FutureRequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FutureRequest_Example-umbrella.h"; sourceTree = "<group>"; };
-		921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionConfig.swift; sourceTree = "<group>"; };
-		99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.release.xcconfig; sourceTree = "<group>"; };
+		92A5345BAE014C8CB9D2E43D2AEA9002 /* FormSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormSession.swift; sourceTree = "<group>"; };
 		9C721B416D2E91EB88FF2003DB03AC89 /* Pods-FutureRequest_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FutureRequest_Example"; path = Pods_FutureRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DownloadSession.swift; sourceTree = "<group>"; };
-		A257F3110A83CE75B58F96B6457C2E0E /* FutureRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FutureRequest.modulemap; sourceTree = "<group>"; };
+		A825A194E0F0810D30061C67A5A2633A /* FutureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FutureSession.swift; sourceTree = "<group>"; };
 		A92438FA9C255930EC42DB8F0EC7F151 /* Pods-FutureRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FutureRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B941FBB4F6B15F84302365234C741C81 /* Pods-FutureRequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FutureRequest_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CADB1C0074B499174C590B97ACDAC96B /* Pods-FutureRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FutureRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CF6131442799523D7C4942738ADFBF5C /* FutureRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FutureRequest; path = FutureRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25170880C60AF0134D7B8FF33D1E16A /* Pods-FutureRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FutureRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4099D8C5323773AED3ED766CF85C5F6 /* Pods-FutureRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FutureRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FutureRequest.debug.xcconfig; sourceTree = "<group>"; };
 		DA7C9C760A962E3F8001073801A79C31 /* Pods-FutureRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FutureRequest_Example-Info.plist"; sourceTree = "<group>"; };
-		DB607152E23EA61759B38202ED4DE452 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FutureRequest-umbrella.h"; sourceTree = "<group>"; };
-		F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Requestor.swift; sourceTree = "<group>"; };
-		F891E6D95593E00E3B7126009D5EF20D /* FutureRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FutureRequest-Info.plist"; sourceTree = "<group>"; };
-		FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UploadSession.swift; sourceTree = "<group>"; };
+		E2D554A784C77F5AB8ADF669522224C7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E3B0DE16A059564AD0D3E817B9315721 /* UploadSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UploadSession.swift; sourceTree = "<group>"; };
+		E715E95B9202102D435208FC4556E430 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		FDE3EB916336C3A4262C9677431AF354 /* Pods-FutureRequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FutureRequest_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		214616F98EE09DDC275390226A12494F /* Frameworks */ = {
+		E6E444BA87ECB721E52EA2460BE494FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDD0B63C07BB414C8049C0E6414A460 /* Foundation.framework in Frameworks */,
+				324B37792D051AD9BBB11970634DA247 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,49 +93,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05D270CF73C52BC71DE04EC4FD908735 /* Session */ = {
+		06BDC364F8AA94133E4CC3646B496646 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				E450C9FD4C5FDB749B356C4A25BF9A2E /* DownloadSession */,
-				70006F708C7098A91C3EC59D833BDC71 /* FormSession */,
-				39A2B07FFE9EED2159A56682516D8814 /* FutureSession */,
-				E09C1EAC990DEB14059836A7AEA23495 /* UploadSession */,
+				7F4B154D56F6BD62D890DDD7B38D11A2 /* RequestProtocol.swift */,
 			);
-			name = Session;
-			path = FutureRequest/Classes/Session;
+			name = Protocol;
+			path = FutureRequest/Classes/Protocol;
 			sourceTree = "<group>";
 		};
-		2D7C6C6C4A22FDE89F11750AF29E0184 /* Support Files */ = {
+		19B24B3DEA4F624981E8EE8769CFAA25 /* DownloadSession */ = {
 			isa = PBXGroup;
 			children = (
-				A257F3110A83CE75B58F96B6457C2E0E /* FutureRequest.modulemap */,
-				121CF7002F74947FD8909461540044AF /* FutureRequest-dummy.m */,
-				F891E6D95593E00E3B7126009D5EF20D /* FutureRequest-Info.plist */,
-				2F66026BEA02F17B25168641051B7404 /* FutureRequest-prefix.pch */,
-				F00ED4F2A50D2483CA972666FDBFFB8C /* FutureRequest-umbrella.h */,
-				DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */,
-				99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */,
+				8C7D4D8898285E65C5D13B33ADF63338 /* DownloadSession.swift */,
+			);
+			name = DownloadSession;
+			path = DownloadSession;
+			sourceTree = "<group>";
+		};
+		2829187069C18CC1DCC8276A12693A1F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BD30430DFA7D298F57A015519ADA201 /* FutureRequest.modulemap */,
+				0A9B06D2666087CB0C64A94BEA019735 /* FutureRequest-dummy.m */,
+				47B63C4AFEB9D57CD0F58664DC55F681 /* FutureRequest-Info.plist */,
+				1458BB9811B081C2E7A5F305393509D7 /* FutureRequest-prefix.pch */,
+				71C0DBBD02B9CA53864DE1CA5F880AA0 /* FutureRequest-umbrella.h */,
+				04D8FE33EC6AC33CCD9DF796CBA48438 /* FutureRequest.debug.xcconfig */,
+				86F820586F0A6F396DB865A4B20658CA /* FutureRequest.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FutureRequest";
 			sourceTree = "<group>";
 		};
-		39A2B07FFE9EED2159A56682516D8814 /* FutureSession */ = {
+		2D6118CC8595DB8AF8E2A6E48D193549 /* Typealias */ = {
 			isa = PBXGroup;
 			children = (
-				47D9CFD279EE6F2A09D7C822114C0185 /* FutureSession.swift */,
+				42D39C4035769ACD30FDF23C2DE4A8D9 /* Typealias.swift */,
 			);
-			name = FutureSession;
-			path = FutureSession;
+			name = Typealias;
+			path = FutureRequest/Classes/Typealias;
 			sourceTree = "<group>";
 		};
-		4B1B6D3650EC3C29C966094A6A763BB6 /* Requestor */ = {
+		2EC540A61E4193D3E40B80AF28072BCF /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				F0DE4DAE729C868C011E1B696BA3C133 /* Requestor.swift */,
+				19B24B3DEA4F624981E8EE8769CFAA25 /* DownloadSession */,
+				FFA3F1126B9EC854BE94D3DFD4E6AD7D /* FormSession */,
+				578DC01BD99A3BE9806CF5DE2AE5D089 /* FutureSession */,
+				E12ED025FD66EF670AA36D55EA88BC6B /* UploadSession */,
 			);
-			name = Requestor;
-			path = FutureRequest/Classes/Requestor;
+			name = Session;
+			path = FutureRequest/Classes/Session;
+			sourceTree = "<group>";
+		};
+		36BD569C05437B8275741DC3B213E2A7 /* BlockProxy */ = {
+			isa = PBXGroup;
+			children = (
+				6BF88148548C281D781D4F49010B5AB3 /* BlockProxy.swift */,
+			);
+			name = BlockProxy;
+			path = FutureRequest/Classes/BlockProxy;
+			sourceTree = "<group>";
+		};
+		40A574221DF4EA4EC65D0AC33446DEB9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1E1E8B77DAFB889B95A1F494875A87E7 /* FutureRequest.podspec */,
+				2B9DBC2C6F7C78DE08945E836E4D8496 /* LICENSE */,
+				E715E95B9202102D435208FC4556E430 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		4C3D23101E2EB32976EB98BB803D4AA4 /* Pods-FutureRequest_Example */ = {
@@ -149,73 +183,66 @@
 			path = "Target Support Files/Pods-FutureRequest_Example";
 			sourceTree = "<group>";
 		};
-		58E1148F9F83233E158A4127F291088C /* Protocol */ = {
+		578DC01BD99A3BE9806CF5DE2AE5D089 /* FutureSession */ = {
 			isa = PBXGroup;
 			children = (
-				75FF7790AE36ABAE80BF3A3292E3DF3A /* RequestProtocol.swift */,
+				A825A194E0F0810D30061C67A5A2633A /* FutureSession.swift */,
 			);
-			name = Protocol;
-			path = FutureRequest/Classes/Protocol;
+			name = FutureSession;
+			path = FutureSession;
 			sourceTree = "<group>";
 		};
-		70006F708C7098A91C3EC59D833BDC71 /* FormSession */ = {
+		68AD01F0273A0321673C59B32557732D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B08DF614E8F422B7F6C18C904C23B83 /* FormSession.swift */,
+				C98CBC494B4403FA0B94E452639DAA38 /* FutureRequest */,
 			);
-			name = FormSession;
-			path = FormSession;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7224622614A5C5A035034C4F65162659 /* SessionConfig */ = {
+		8FDEAFDD8FBC64AE9BB6D90D0FC1A795 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				921E8A1D688E67B2845F8B7474EFE493 /* SessionConfig.swift */,
+				8A3AF4A2B6E411F61E1C2A9ACF33A703 /* Extension.swift */,
+			);
+			name = Extension;
+			path = FutureRequest/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		945DFDE10F6C64DFF435B0B97117D03C /* SessionConfig */ = {
+			isa = PBXGroup;
+			children = (
+				003AA7B382D0706B4B88D29F68DF95E4 /* SessionConfig.swift */,
 			);
 			name = SessionConfig;
 			path = FutureRequest/Classes/SessionConfig;
 			sourceTree = "<group>";
 		};
-		823AB1B44807B3FCF48532A34868C176 /* Development Pods */ = {
+		A0158B33FCA5C1F26DACAE7DEA7DBE7A /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				8A396A13B5E94DB01C496DE3B242C845 /* FutureRequest */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		8A396A13B5E94DB01C496DE3B242C845 /* FutureRequest */ = {
-			isa = PBXGroup;
-			children = (
-				93D546D03B57E94A0629476B1FD55F34 /* Pod */,
-				58E1148F9F83233E158A4127F291088C /* Protocol */,
-				4B1B6D3650EC3C29C966094A6A763BB6 /* Requestor */,
-				C390845B4E9DA34445E431CE55A3B655 /* Response */,
-				05D270CF73C52BC71DE04EC4FD908735 /* Session */,
-				7224622614A5C5A035034C4F65162659 /* SessionConfig */,
-				2D7C6C6C4A22FDE89F11750AF29E0184 /* Support Files */,
-			);
-			name = FutureRequest;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		93D546D03B57E94A0629476B1FD55F34 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3CD2FC028304114D8839DC1BF3228C03 /* FutureRequest.podspec */,
-				DB607152E23EA61759B38202ED4DE452 /* LICENSE */,
-				137FB97A88C2FC14D07C884BBD6680EC /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		C390845B4E9DA34445E431CE55A3B655 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				E3715BC8E8173AC5B33696EC0B807B58 /* Response.swift */,
+				E2D554A784C77F5AB8ADF669522224C7 /* Response.swift */,
 			);
 			name = Response;
 			path = FutureRequest/Classes/Response;
+			sourceTree = "<group>";
+		};
+		C98CBC494B4403FA0B94E452639DAA38 /* FutureRequest */ = {
+			isa = PBXGroup;
+			children = (
+				36BD569C05437B8275741DC3B213E2A7 /* BlockProxy */,
+				8FDEAFDD8FBC64AE9BB6D90D0FC1A795 /* Extension */,
+				40A574221DF4EA4EC65D0AC33446DEB9 /* Pod */,
+				06BDC364F8AA94133E4CC3646B496646 /* Protocol */,
+				F79CBF2C866F1EA0CDB8D5A2BA850914 /* Requestor */,
+				A0158B33FCA5C1F26DACAE7DEA7DBE7A /* Response */,
+				2EC540A61E4193D3E40B80AF28072BCF /* Session */,
+				945DFDE10F6C64DFF435B0B97117D03C /* SessionConfig */,
+				2829187069C18CC1DCC8276A12693A1F /* Support Files */,
+				2D6118CC8595DB8AF8E2A6E48D193549 /* Typealias */,
+			);
+			name = FutureRequest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CC35E0AC92140DDE8D335C4933AFBC72 /* Targets Support Files */ = {
@@ -230,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				823AB1B44807B3FCF48532A34868C176 /* Development Pods */,
+				68AD01F0273A0321673C59B32557732D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				CF5E569C395EEEBC55BF92A8C823E34D /* Products */,
 				CC35E0AC92140DDE8D335C4933AFBC72 /* Targets Support Files */,
@@ -254,22 +281,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E09C1EAC990DEB14059836A7AEA23495 /* UploadSession */ = {
+		E12ED025FD66EF670AA36D55EA88BC6B /* UploadSession */ = {
 			isa = PBXGroup;
 			children = (
-				FB5D504CA407308AC62971FCFAAE7D91 /* UploadSession.swift */,
+				E3B0DE16A059564AD0D3E817B9315721 /* UploadSession.swift */,
 			);
 			name = UploadSession;
 			path = UploadSession;
-			sourceTree = "<group>";
-		};
-		E450C9FD4C5FDB749B356C4A25BF9A2E /* DownloadSession */ = {
-			isa = PBXGroup;
-			children = (
-				A006C71309248D9A7CCE6ED5E502088F /* DownloadSession.swift */,
-			);
-			name = DownloadSession;
-			path = DownloadSession;
 			sourceTree = "<group>";
 		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
@@ -280,14 +298,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		F79CBF2C866F1EA0CDB8D5A2BA850914 /* Requestor */ = {
+			isa = PBXGroup;
+			children = (
+				31CD4EF05E2EACBB6E7FF1244456375E /* Requestor.swift */,
+			);
+			name = Requestor;
+			path = FutureRequest/Classes/Requestor;
+			sourceTree = "<group>";
+		};
+		FFA3F1126B9EC854BE94D3DFD4E6AD7D /* FormSession */ = {
+			isa = PBXGroup;
+			children = (
+				92A5345BAE014C8CB9D2E43D2AEA9002 /* FormSession.swift */,
+			);
+			name = FormSession;
+			path = FormSession;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		33D3EC3AF80EAD78638652FEC8BBE8AF /* Headers */ = {
+		1A69C2D9BEBE716935C5098AE9F2D9F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4791CC6AAC92288821B7D4A2272FACFE /* FutureRequest-umbrella.h in Headers */,
+				01CDB6DFB64B6BCCA1A7CA592FBBA229 /* FutureRequest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +340,12 @@
 /* Begin PBXNativeTarget section */
 		1231A0F580C81C33E16E7641C25636DF /* FutureRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AF924645628EE03544CD1139926A991 /* Build configuration list for PBXNativeTarget "FutureRequest" */;
+			buildConfigurationList = 38744A1C02BC7B9E0A33313B60169C7C /* Build configuration list for PBXNativeTarget "FutureRequest" */;
 			buildPhases = (
-				33D3EC3AF80EAD78638652FEC8BBE8AF /* Headers */,
-				3BE6B089FCD2D360FB9AD652E5814C6F /* Sources */,
-				214616F98EE09DDC275390226A12494F /* Frameworks */,
-				1A71654CC3DF1244C22600707C3FD051 /* Resources */,
+				1A69C2D9BEBE716935C5098AE9F2D9F7 /* Headers */,
+				1E5C90D6EBCBFE06128A4A56BDA4B96B /* Sources */,
+				E6E444BA87ECB721E52EA2460BE494FF /* Frameworks */,
+				99946A2BF37699DAC806DD2ED775B076 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -332,7 +368,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F9E90EB4B1E30F0654E09ABCB713947D /* PBXTargetDependency */,
+				41B7A3B3602251C562C2F21BF0193F6B /* PBXTargetDependency */,
 			);
 			name = "Pods-FutureRequest_Example";
 			productName = Pods_FutureRequest_Example;
@@ -370,14 +406,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A71654CC3DF1244C22600707C3FD051 /* Resources */ = {
+		8EECD7B4EA17AA40930E6B782F1D107E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EECD7B4EA17AA40930E6B782F1D107E /* Resources */ = {
+		99946A2BF37699DAC806DD2ED775B076 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,19 +423,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3BE6B089FCD2D360FB9AD652E5814C6F /* Sources */ = {
+		1E5C90D6EBCBFE06128A4A56BDA4B96B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974D27D563465D43086AB1E78A73301D /* DownloadSession.swift in Sources */,
-				8ABA41929CEC4503CDB051BBBF9AE1F5 /* FormSession.swift in Sources */,
-				93D5D538EAE0F4CF6E3254D46D70326C /* FutureRequest-dummy.m in Sources */,
-				2AA0F277E6AD72FDCE7FAFA74AB1AC9B /* FutureSession.swift in Sources */,
-				9FD0411F364CA77D84F9E20147F404BD /* Requestor.swift in Sources */,
-				6F08FE2C10D70677D8D71DB4C86E8499 /* RequestProtocol.swift in Sources */,
-				873FA35BBA3A0AFDB28C612864472B63 /* Response.swift in Sources */,
-				F923BFD1570A98AED2CAA219EC766AE3 /* SessionConfig.swift in Sources */,
-				7856F5F89AB14E810FAC1792519ADC57 /* UploadSession.swift in Sources */,
+				8EA3C43A84C027E268F13381409DE37D /* BlockProxy.swift in Sources */,
+				C2C13EEA3F540DFD4C8A1AF5ECF1F73D /* DownloadSession.swift in Sources */,
+				8E67D38A5A8E03CE179B8398008987BE /* Extension.swift in Sources */,
+				1A170863284264DF6254843A5AE63948 /* FormSession.swift in Sources */,
+				C255636C5F99E05B82610EC894B5B752 /* FutureRequest-dummy.m in Sources */,
+				AEE45FC051EC40ABD381400F0F45E904 /* FutureSession.swift in Sources */,
+				D07321AD7C2C967E533023F7F24E6AA3 /* Requestor.swift in Sources */,
+				A9C5002BF24E2FE3350300631E572DCE /* RequestProtocol.swift in Sources */,
+				3FF8E18FA31B929E0DF595D17122C0FE /* Response.swift in Sources */,
+				12E52FC76233BC34571AECCBE5C801F8 /* SessionConfig.swift in Sources */,
+				CE6370D54B68D4A87960BB708EF5CB44 /* Typealias.swift in Sources */,
+				A4CDE4AD1C50303D3D43AFEF36C49264 /* UploadSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,188 +453,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F9E90EB4B1E30F0654E09ABCB713947D /* PBXTargetDependency */ = {
+		41B7A3B3602251C562C2F21BF0193F6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FutureRequest;
 			target = 1231A0F580C81C33E16E7641C25636DF /* FutureRequest */;
-			targetProxy = 328DFD535A22D68F81030CA904C02551 /* PBXContainerItemProxy */;
+			targetProxy = 5477D67823FD13213F66DFE8F0D322CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		30935AD7A12631C5155BEBBE065404B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA745312AF1F755D3628A1A40A9DCE0D /* FutureRequest.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FutureRequest/FutureRequest-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FutureRequest/FutureRequest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FutureRequest/FutureRequest.modulemap";
-				PRODUCT_MODULE_NAME = FutureRequest;
-				PRODUCT_NAME = FutureRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3F8284CD89C21F01FC5FBAD46E832047 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99F64B0F8B1FE0AE945CA11F7ACE8450 /* FutureRequest.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FutureRequest/FutureRequest-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FutureRequest/FutureRequest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FutureRequest/FutureRequest.modulemap";
-				PRODUCT_MODULE_NAME = FutureRequest;
-				PRODUCT_NAME = FutureRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5015EE9545004938C2AA28C833B6B553 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CADB1C0074B499174C590B97ACDAC96B /* Pods-FutureRequest_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		8891A6A367DAA79AB638D8D6C4832CE5 /* Release */ = {
+		109E41DC8AF528CC63D9AA507BC16D2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D25170880C60AF0134D7B8FF33D1E16A /* Pods-FutureRequest_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -609,7 +481,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example.modulemap";
@@ -627,7 +499,44 @@
 			};
 			name = Release;
 		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		6A7C51442F36E4C1FE3DDBDAAB8947EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F820586F0A6F396DB865A4B20658CA /* FutureRequest.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FutureRequest/FutureRequest-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FutureRequest/FutureRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FutureRequest/FutureRequest.modulemap";
+				PRODUCT_MODULE_NAME = FutureRequest;
+				PRODUCT_NAME = FutureRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -680,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -693,14 +602,157 @@
 			};
 			name = Debug;
 		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C53563ABA0BBD04D00816254D021A253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D8FE33EC6AC33CCD9DF796CBA48438 /* FutureRequest.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FutureRequest/FutureRequest-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FutureRequest/FutureRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FutureRequest/FutureRequest.modulemap";
+				PRODUCT_MODULE_NAME = FutureRequest;
+				PRODUCT_NAME = FutureRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5E3CA4D036CE464D595EE93DDB17B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADB1C0074B499174C590B97ACDAC96B /* Pods-FutureRequest_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FutureRequest_Example/Pods-FutureRequest_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		38744A1C02BC7B9E0A33313B60169C7C /* Build configuration list for PBXNativeTarget "FutureRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C53563ABA0BBD04D00816254D021A253 /* Debug */,
+				6A7C51442F36E4C1FE3DDBDAAB8947EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -708,17 +760,8 @@
 		7AA10602B8D0E38EFC3EFF9D714C9357 /* Build configuration list for PBXNativeTarget "Pods-FutureRequest_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5015EE9545004938C2AA28C833B6B553 /* Debug */,
-				8891A6A367DAA79AB638D8D6C4832CE5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9AF924645628EE03544CD1139926A991 /* Build configuration list for PBXNativeTarget "FutureRequest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30935AD7A12631C5155BEBBE065404B1 /* Debug */,
-				3F8284CD89C21F01FC5FBAD46E832047 /* Release */,
+				F5E3CA4D036CE464D595EE93DDB17B3E /* Debug */,
+				109E41DC8AF528CC63D9AA507BC16D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
