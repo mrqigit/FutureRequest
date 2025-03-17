@@ -27,8 +27,6 @@ public enum Method: MethodProtocol {
             return url
         case let .patch(url: url, params: _):
             return url
-        default:
-            return nil
         }
     }
     

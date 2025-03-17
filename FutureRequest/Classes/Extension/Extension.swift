@@ -11,7 +11,10 @@ public extension Query {
     
     var jsonQuery: String? {
         do {
-            let data = try JSONSerialization.data(withJSONObject: self, options: [])
+            let data = try JSONSerialization.data(
+                withJSONObject: self,
+                options: []
+            )
             guard let jsonString = String(data: data, encoding: .utf8) else {
                 return nil
             }
@@ -39,7 +42,10 @@ public extension Query {
 public extension Params {
     var jsonParams: String? {
         do {
-            let data = try JSONSerialization.data(withJSONObject: self, options: [])
+            let data = try JSONSerialization.data(
+                withJSONObject: self,
+                options: []
+            )
             guard let jsonString = String(data: data, encoding: .utf8) else {
                 return nil
             }
