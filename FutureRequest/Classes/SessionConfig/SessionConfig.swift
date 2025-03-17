@@ -12,6 +12,9 @@ public class SessionConfig: NSObject, NSCopying, @unchecked Sendable  {
     /// config类型
     var type: ConfigType
     
+    /// HTTP认证用户密码
+    var credential: Credential?
+    
     /// 配置对象的后台会话标识符。
     var identifier: String? { return config.identifier }
     
@@ -237,4 +240,10 @@ public class SessionConfig: NSObject, NSCopying, @unchecked Sendable  {
         
         return obj
     }
+}
+
+/// 证书认证
+public struct Credential {
+    var userName: String
+    var passWord: String
 }

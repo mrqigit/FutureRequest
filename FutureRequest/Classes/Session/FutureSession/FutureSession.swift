@@ -28,13 +28,19 @@ public class FutureSession: NSObject {
         if case let .lose(response) = validRes {
             return .fail(response: response)
         } else if case let .valid(url) = validRes {
-            guard let _url = URL.init(string: url) else { return .fail(response: response_400) }
+            guard let _url = URL.init(string: url) else {
+                return .fail(response: response_400)
+            }
             var requestURL = URLRequest(url: _url)
             requestURL.httpMethod = method.rawValue
             if method != .get {
                 requestURL.httpBody = params?.jsonParams?.data(using: .utf8)
             }
-            proxy = BlockProxy.init(target: self, progress: progress)
+            proxy = BlockProxy.init(
+                target: self,
+                progress: progress,
+                credential: config.credential
+            )
             return .succ(request: requestURL)
         }
         return .fail(response: response_400)
@@ -45,7 +51,9 @@ public class FutureSession: NSObject {
         if url.isHttp || url.isHttps {
             return .valid(url: url)
         }
-        guard var baseUrl = baseUrl else { return .lose(response: response_404) }
+        guard var baseUrl = baseUrl else {
+            return .lose(response: response_404)
+        }
         if baseUrl.isValidPath {
             let endIndex = baseUrl.index(baseUrl.endIndex, offsetBy: -1)
             baseUrl = String(baseUrl[baseUrl.startIndex...endIndex])
