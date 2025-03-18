@@ -7,9 +7,20 @@
 
 import Foundation
 
+@available(iOS 15.0, *)
 public class DownloadSession: FutureSession, DownloadProtocol {
     
-    func download(url: String?, resumeData: Data?, params: Params?, progress: @escaping ProgressComplent) async throws -> Response {
+    private static var instance: DownloadSession?
+    
+    public class func shareInstance(baseUrl: String? = nil) -> DownloadSession {
+        if instance != nil {
+            return instance!
+        }
+        instance = DownloadSession.init(config: SessionConfig(), baseUrl: baseUrl)
+        return instance!
+    }
+    
+    public func download(url: String?, resumeData: Data?, params: Params?, progress: @escaping ProgressComplent) async throws -> Response {
         let result: ResponseEnum = configRequest(
             method: .post,
             url: url,
@@ -29,62 +40,12 @@ public class DownloadSession: FutureSession, DownloadProtocol {
     }
     
     private func requestSessionTask(requestURL: URLRequest, resumeData: Data?) async throws -> Response {
-        return await withCheckedContinuation { continuation in
-            let urlSession = URLSession.init(
-                configuration: config.config,
-                delegate: proxy,
-                delegateQueue: queue
-            )
-            var downloadTask: URLSessionDownloadTask?
-            if resumeData == nil {
-                downloadTask = urlSession
-                    .downloadTask(with: requestURL) { (url, response, error) in
-                        if error != nil {
-                            continuation
-                                .resume(
-                                    returning: Response(
-                                        code: 400,
-                                        msg: error?.localizedDescription
-                                    )
-                                )
-                        } else {
-                            continuation
-                                .resume(
-                                    returning: Response(
-                                        code: 200,
-                                        data: response
-                                    )
-                                )
-                        }
-                    }
-            } else {
-                urlSession.downloadTask(with: requestURL)
-                downloadTask = urlSession
-                    .downloadTask(withResumeData: resumeData!){ (
-                        url,
-                        response,
-                        error
-                    ) in
-                        if error != nil {
-                            continuation
-                                .resume(
-                                    returning: Response(
-                                        code: 400,
-                                        msg: error?.localizedDescription
-                                    )
-                                )
-                        } else {
-                            continuation
-                                .resume(
-                                    returning: Response(
-                                        code: 200,
-                                        data: response
-                                    )
-                                )
-                        }
-                    }
-            }
-            downloadTask?.resume()
+        if resumeData == nil {
+            try await session.download(for: requestURL, delegate: proxy)
+            return response_200
+        } else {
+            try await session.download(resumeFrom: resumeData!, delegate: proxy)
         }
+        return response_200
     }
 }

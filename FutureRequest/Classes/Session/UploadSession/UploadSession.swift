@@ -30,7 +30,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                     form: forFile
                 )
             } else {
-                return Response(code: 400, msg: "上传路径以及续传文件不能同时为空")
+                return response_upload
             }
         }
         return response_400
@@ -58,7 +58,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                     form: forURL
                 )
             } else {
-                return Response(code: 400, msg: "上传路径以及续传文件不能同时为空")
+                return response_upload
             }
         }
         return response_400
@@ -86,7 +86,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                     form: forPath
                 )
             } else {
-                return Response(code: 400, msg: "上传路径以及续传文件不能同时为空")
+                return response_upload
             }
         }
         return response_400
@@ -94,15 +94,10 @@ public class UploadSession: FutureSession, UploadProtocol {
     
     private func requestSessionTask(requestURL: URLRequest, form: Any?) async throws -> Response {
         return await withCheckedContinuation { continuation in
-            let urlSession = URLSession.init(
-                configuration: config.config,
-                delegate: proxy,
-                delegateQueue: queue
-            )
             var uRLSessionDataTask: URLSessionUploadTask?
             
             if form is URL {
-                uRLSessionDataTask = urlSession
+                uRLSessionDataTask = session
                     .uploadTask(
                         with: requestURL,
                         fromFile: form as! URL,
@@ -136,7 +131,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                         .resume(
                             returning: response_400
                         ) }
-                uRLSessionDataTask = urlSession
+                uRLSessionDataTask = session
                     .uploadTask(
                         with: requestURL,
                         fromFile: uRL,
@@ -164,7 +159,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                             }
                         })
             } else if form is Data {
-                uRLSessionDataTask = urlSession
+                uRLSessionDataTask = session
                     .uploadTask(with: requestURL, from: form as? Data, completionHandler: { (
                         data,
                         response,
@@ -195,14 +190,9 @@ public class UploadSession: FutureSession, UploadProtocol {
     
     private func uploadTask(requestURL: URLRequest, resumeData: Data?) async throws -> Response {
         return await withCheckedContinuation { continuation in
-            let urlSession = URLSession.init(
-                configuration: config.config,
-                delegate: proxy,
-                delegateQueue: queue
-            )
             var uRLSessionDataTask: URLSessionUploadTask?
             if #available(iOS 17.0, *) {
-                uRLSessionDataTask = urlSession
+                uRLSessionDataTask = session
                     .uploadTask(withResumeData: resumeData!) { (
                         data,
                         response,
@@ -225,7 +215,7 @@ public class UploadSession: FutureSession, UploadProtocol {
                     }
             } else {
                 //                requestURL.setValue("bytes=\(resumeData!.count)", forHTTPHeaderField: "Content-Range")
-                uRLSessionDataTask = urlSession
+                uRLSessionDataTask = session
                     .uploadTask(with: requestURL, from: resumeData!) { (
                         data,
                         response,

@@ -9,21 +9,25 @@ import Foundation
 
 public class FutureSession: NSObject {
     
-    public var config: SessionConfig
-    public var baseUrl: String? { return _baseUrl }
-    private var _baseUrl: String?
-    public var proxy: BlockProxy?
-    public var queue: OperationQueue?
+    private var config: SessionConfig
+    private var baseUrl: String?
+    private var _proxy: BlockProxy?
+    public var proxy: BlockProxy? {
+        return _proxy
+    }
+    
+    public var session: URLSession {
+        return URLSession(configuration: config.config, delegate: _proxy, delegateQueue: _proxy?.queue)
+    }
     
     required init(config: SessionConfig, baseUrl: String?) {
         self.config = config
-        self._baseUrl = baseUrl
-        self.queue = OperationQueue()
+        self.baseUrl = baseUrl
         
         super.init()
     }
     
-    public func configRequest(method: MethodType, url: String?, query: Query?, params: Params?, progress: @escaping ProgressComplent) -> ResponseEnum {
+    func configRequest(method: MethodType, url: String?, query: Query?, params: Params?, progress: ProgressComplent? = nil) -> ResponseEnum {
         let validRes = checkUrlValid(url: url)
         if case let .lose(response) = validRes {
             return .fail(response: response)
@@ -36,11 +40,12 @@ public class FutureSession: NSObject {
             if method != .get {
                 requestURL.httpBody = params?.jsonParams?.data(using: .utf8)
             }
-            proxy = BlockProxy.init(
+            _proxy = BlockProxy.init(
                 target: self,
                 progress: progress,
                 credential: config.credential
             )
+            
             return .succ(request: requestURL)
         }
         return .fail(response: response_400)

@@ -35,3 +35,12 @@ public let response_405: Response = Response(
     code: 405,
     msg: "客户端使用的HTTP方法(如:GET、POST、PUT、DELETE等)不被服务器允许用于请求的资源"
 )
+
+public let response_upload: Response = Response(
+    code: 400,
+    msg: "上传路径以及续传文件不能同时为空"
+)
+
+public let response_200: Response = Response(
+    code: 200
+)

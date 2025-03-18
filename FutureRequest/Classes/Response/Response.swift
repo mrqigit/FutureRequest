@@ -9,9 +9,9 @@ import Foundation
 
 public class Response: NSObject {
     
-    var code: Int
-    var msg: String?
-    var data: Any?
+    public var code: Int
+    public var msg: String?
+    public var data: Any?
     
     init(code: Int, msg: String? = nil, data: Any? = nil) {
         self.code = code

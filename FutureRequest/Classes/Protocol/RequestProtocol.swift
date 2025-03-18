@@ -10,7 +10,7 @@ import Foundation
 /// 表单获取或提交协议
 internal protocol FormProtocol {
     
-    func request(method: Method, progress: @escaping ProgressComplent) async throws -> Response
+    func request(method: Method, progress: ProgressComplent?) async throws -> Response
 }
 
 /// 文件下载协议

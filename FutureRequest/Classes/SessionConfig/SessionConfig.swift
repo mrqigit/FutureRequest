@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SessionConfig: NSObject, NSCopying, @unchecked Sendable  {
+public struct SessionConfig: @unchecked Sendable  {
     
     /// config类型
     var type: ConfigType
@@ -146,12 +146,12 @@ public class SessionConfig: NSObject, NSCopying, @unchecked Sendable  {
         return _config
     }
     
-    private override init() {
+    init() {
         self.type = .default
         self.requestCachePolicy = .useProtocolCachePolicy
         self.timeoutIntervalForRequest = 15
         self.timeoutIntervalForResource = 15
-        self.requiresDNSSECValidation = true
+        self.requiresDNSSECValidation = false
         self.waitsForConnectivity = true
         self.isDiscretionary = true
         self.sessionSendsLaunchEvents = true
@@ -171,74 +171,12 @@ public class SessionConfig: NSObject, NSCopying, @unchecked Sendable  {
         self.httpShouldSetCookies = true
         self.httpCookieAcceptPolicy = .always
         self.multipathServiceType = .aggregate
-        super.init()
-    }
-    
-    public init(type: ConfigType) {
-        self.type = type
-        self.requestCachePolicy = .useProtocolCachePolicy
-        self.timeoutIntervalForRequest = 15
-        self.timeoutIntervalForResource = 15
-        self.requiresDNSSECValidation = true
-        self.waitsForConnectivity = true
-        self.isDiscretionary = true
-        self.sessionSendsLaunchEvents = true
-        self.httpAdditionalHeaders = [:]
-        self.httpMaximumConnectionsPerHost = 4
-        self.httpCookieStorage = HTTPCookieStorage.shared
-        self.urlCredentialStorage = URLCredentialStorage.shared
-        self.urlCache = URLCache.shared
-        self.shouldUseExtendedBackgroundIdleMode = true
-        self.networkServiceType = .default
-        self.allowsCellularAccess = true
-        self.allowsExpensiveNetworkAccess = true
-        self.allowsConstrainedNetworkAccess = true
-        self.tlsMinimumSupportedProtocolVersion = .TLSv10
-        self.tlsMaximumSupportedProtocolVersion = .DTLSv12
-        self.httpShouldUsePipelining = true
-        self.httpShouldSetCookies = true
-        self.httpCookieAcceptPolicy = .always
-        self.multipathServiceType = .aggregate
-        super.init()
     }
     
     public enum ConfigType {
         case `default`
         case ephemeral
         case background(identifier: String)
-    }
-    
-    public func copy(with zone: NSZone? = nil) -> Any {
-        let obj = SessionConfig(type: .default)
-        obj.type = type
-        obj.requestCachePolicy = requestCachePolicy
-        obj.timeoutIntervalForRequest = timeoutIntervalForRequest
-        obj.timeoutIntervalForResource = timeoutIntervalForResource
-        obj.networkServiceType = networkServiceType
-        obj.allowsCellularAccess = allowsCellularAccess
-        obj.allowsExpensiveNetworkAccess = allowsExpensiveNetworkAccess
-        obj.allowsConstrainedNetworkAccess = allowsConstrainedNetworkAccess
-        obj.requiresDNSSECValidation = requiresDNSSECValidation
-        obj.waitsForConnectivity = waitsForConnectivity
-        obj.isDiscretionary = isDiscretionary
-        obj.sharedContainerIdentifier = sharedContainerIdentifier
-        obj.sessionSendsLaunchEvents = sessionSendsLaunchEvents
-        obj.connectionProxyDictionary = connectionProxyDictionary
-        obj.tlsMinimumSupportedProtocolVersion = tlsMinimumSupportedProtocolVersion
-        obj.tlsMaximumSupportedProtocolVersion = tlsMaximumSupportedProtocolVersion
-        obj.httpShouldUsePipelining = httpShouldUsePipelining
-        obj.httpShouldSetCookies = httpShouldSetCookies
-        obj.httpCookieAcceptPolicy = httpCookieAcceptPolicy
-        obj.httpAdditionalHeaders = httpAdditionalHeaders
-        obj.httpMaximumConnectionsPerHost = httpMaximumConnectionsPerHost
-        obj.httpCookieStorage = httpCookieStorage
-        obj.urlCredentialStorage = urlCredentialStorage
-        obj.urlCache = urlCache
-        obj.shouldUseExtendedBackgroundIdleMode = shouldUseExtendedBackgroundIdleMode
-        obj.protocolClasses = protocolClasses
-        obj.multipathServiceType = multipathServiceType
-        
-        return obj
     }
 }
 

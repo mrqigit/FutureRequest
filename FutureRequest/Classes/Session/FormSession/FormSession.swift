@@ -9,7 +9,17 @@ import Foundation
 
 public class FormSession: FutureSession, FormProtocol {
     
-    public func request(method: Method, progress: @escaping ProgressComplent) async -> Response {
+    private static var instance: FormSession?
+    
+    public class func shareInstance(baseUrl: String? = nil) -> FormSession {
+        if instance != nil {
+            return instance!
+        }
+        instance = FormSession.init(config: SessionConfig(), baseUrl: baseUrl)
+        return instance!
+    }
+
+    public func request(method: Method, progress: ProgressComplent?) async throws -> Response {
         var result: ResponseEnum = .fail(response: response_400)
         if case .get(_, _) = method {
             result = configRequest(
@@ -62,12 +72,7 @@ public class FormSession: FutureSession, FormProtocol {
     
     private func requestSessionTask(requestURL: URLRequest) async throws -> Response {
         return await withCheckedContinuation { continuation in
-            let urlSession = URLSession.init(
-                configuration: config.config,
-                delegate: proxy,
-                delegateQueue: queue
-            )
-            let uRLSessionDataTask = urlSession.dataTask(with: requestURL) { (
+            let uRLSessionDataTask = session.dataTask(with: requestURL) { (
                 data,
                 response,
                 error

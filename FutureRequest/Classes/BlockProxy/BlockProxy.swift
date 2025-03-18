@@ -17,6 +17,8 @@ public class BlockProxy: NSObject {
     /// HTTP认证用户密码
     var credential: Credential?
     
+    var queue: OperationQueue?
+    
     required init(
         target: NSObject?,
         progress: ProgressComplent?,
@@ -25,6 +27,10 @@ public class BlockProxy: NSObject {
         self.target = target
         self.progress = progress
         self.credential = credential
+        self.queue = .current
+        if queue == nil {
+            queue = OperationQueue.init()
+        }
         super.init()
     }
 }
@@ -323,7 +329,7 @@ extension BlockProxy: URLSessionDownloadDelegate {
         totalBytesWritten: Int64,
         totalBytesExpectedToWrite: Int64
     ) {
-        
+        print("-----didWriteData:\(bytesWritten)\n-----totalBytesWritten:\(totalBytesWritten)\n-----totalBytesExpectedToWrite:\(totalBytesExpectedToWrite)")
     }
 }
 
